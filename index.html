@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="sr-Latn">
 <head>
+<script>try{if(window.matchMedia&&window.matchMedia("(max-width:760px)").matches)location.replace("mobile.html"+location.hash);}catch(e){}</script>
 <meta charset="utf-8">
 <title>Mel-A Mes — Mesara u Staparu | Domaći proizvodi i sveže meso</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -274,24 +275,21 @@ a{color:#681F25}a:hover{color:#4C161B}
 <img class="prod-ph" src="images/sveze-meso.jpg" alt="Sveže meso u mesari Mel-A Mes" style="width: 100%; object-fit: cover; display: block">
 <div style="border-top: 2px solid #29251F; padding-top: 20px; margin-top: 26px">
 <h3 class="serif prod-name">Sveže meso</h3>
-<p style="margin: 14px 0 18px; color: #766E65; font-size: 16px">Sveže meso za vašu trpezu. Komade i količine dogovaramo u radnji, prema onome što je tog dana dostupno.</p>
-<a class="tlink" href="#kontakt" aria-label="Pitajte nas o svežem mesu" style="font-size: 15px">Pitajte nas</a>
+<p style="margin: 14px 0 0; color: #766E65; font-size: 16px">Sveže meso za vašu trpezu. Komade i količine dogovaramo u radnji, prema onome što je tog dana dostupno.</p>
 </div>
 </article>
 <article>
 <img class="prod-ph" src="images/slanina.jpg" alt="Domaći suhomesnati proizvodi u mesari Mel-A Mes" style="width: 100%; object-fit: cover; display: block">
 <div style="border-top: 2px solid #29251F; padding-top: 20px; margin-top: 26px">
 <h3 class="serif prod-name">Domaći suhomesnati proizvodi</h3>
-<p style="margin: 14px 0 18px; color: #766E65; font-size: 16px">Domaća kobasica, slanina i kulen.</p>
-<a class="tlink" href="https://www.instagram.com/mesara_melames_stapar/" target="_blank" rel="noopener" aria-label="Suhomesnati proizvodi na Instagramu Mel-A Mes" style="font-size: 15px">Saznajte više</a>
+<p style="margin: 14px 0 0; color: #766E65; font-size: 16px">Domaća kobasica, slanina i kulen.</p>
 </div>
 </article>
 <article>
 <img class="prod-ph" src="images/sunkarica-tirolska.jpg" alt="Mesne prerađevine u mesari Mel-A Mes" style="width: 100%; object-fit: cover; display: block">
 <div style="border-top: 2px solid #29251F; padding-top: 20px; margin-top: 26px">
 <h3 class="serif prod-name">Mesne prerađevine</h3>
-<p style="margin: 14px 0 18px; color: #766E65; font-size: 16px">Šunkarica, tirolska kobasica, parizer, švargla, pašteta, viršle, mesni hleb (Leberkäse) i debreciner kobasica.</p>
-<a class="tlink" href="https://www.instagram.com/mesara_melames_stapar/" target="_blank" rel="noopener" aria-label="Mesne prerađevine na Instagramu Mel-A Mes" style="font-size: 15px">Saznajte više</a>
+<p style="margin: 14px 0 0; color: #766E65; font-size: 16px">Šunkarica, tirolska kobasica, parizer, švargla, pašteta, viršle, mesni hleb (Leberkäse) i debreciner kobasica.</p>
 </div>
 </article>
 </div>
@@ -341,9 +339,9 @@ a{color:#681F25}a:hover{color:#4C161B}
 
 <h2 class="serif h2" style="color: #FAF8F4; margin-top: 18px">Od dečačkog sna do naše mesare.</h2>
 <div style="max-width: 480px">
-<p style="margin: 0 0 20px; font-size: 19px; color: #F4EBDD">Mel-A Mes je nastao iz želje koja traje još od detinjstva. Naš suprug i tata oduvek je želeo da bude mesar, a prvog oktobra taj san je konačno postao stvarnost.</p>
-<p style="margin: 0 0 20px; color: #ECD8CB">Danas zajedno gradimo našu malu mesaru, uz veliku podršku porodice. Nismo nasledili porodični posao, ali se nadamo da ćemo jednog dana imati šta da ostavimo narednim generacijama.</p>
-<p style="margin: 0 0 8px; color: #ECD8CB">Cilj nam je jednostavan: da ostanemo mala mesara u kojoj se zna odakle meso dolazi, ko ga priprema i šta se stavlja u svaki proizvod. Ne želimo industrijsku proizvodnju. Želimo domaći ukus, kvalitet i poverenje naših kupaca.</p>
+<p style="margin: 0 0 20px; font-size: 19px; color: #F4EBDD">Mel-A Mes nastao je iz jedne želje koja traje još od detinjstva. Još kao dečak, osnivač naše mesare sanjao je da jednog dana postane mesar. Prvog oktobra taj san je postao stvarnost.</p>
+<p style="margin: 0 0 20px; color: #ECD8CB">Danas Mel-A Mes zajedno vode supružnici, uz podršku porodice. Iako ovo nije posao koji su nasledili, nadaju se da će jednog dana postati porodična tradicija.</p>
+<p style="margin: 0 0 8px; color: #ECD8CB">Njihova želja nije da postanu velika industrija, već da ostanu mala mesara u kojoj se pažnja posvećuje svakom proizvodu, a kvalitet ima prednost nad količinom.</p>
 <p class="serif" style="margin: 30px 0 0; font-size: 22px; font-weight: 700; color: #FAF8F4">Porodica Mel-A Mes</p>
 <p style="margin: 4px 0 0; font-size: 14px; color: #E4CFC2">Stapar</p>
 </div>
@@ -508,33 +506,20 @@ header.menu-open .burger .ic-open{display:none}
 (function(){
   var header=document.querySelector('header');
   var burger=document.getElementById('burger');
-  if(burger&&header){
-    burger.addEventListener('click',function(){
-      var open=header.classList.toggle('menu-open');
-      burger.setAttribute('aria-expanded',open?'true':'false');
-      burger.setAttribute('aria-label',open?'Zatvori meni':'Otvori meni');
-    });
-  }
+  if(burger&&header){burger.addEventListener('click',function(){var open=header.classList.toggle('menu-open');burger.setAttribute('aria-expanded',open?'true':'false');burger.setAttribute('aria-label',open?'Zatvori meni':'Otvori meni');});}
   window.closeMenu=function(){ if(header)header.classList.remove('menu-open'); if(burger){burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Otvori meni');} };
   var sel='.intro-grid,.prod-head>*,.prod-grid,.story-grid>*,.rev-grid,.faq-list,.visit-grid>*';
-  try{
-    var els=Array.prototype.slice.call(document.querySelectorAll(sel));
+  try{var els=Array.prototype.slice.call(document.querySelectorAll(sel));
     if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('is-in');});}
     else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target);}});},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});els.forEach(function(el){io.observe(el);});}
   }catch(e){try{document.querySelectorAll(sel).forEach(function(el){el.classList.add('is-in');});}catch(_){}}
-  try{
-    var ticker=document.getElementById('ponuda-ticker');
-    if(ticker){
-      var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var paused=false,started=false,period=0;
-      ticker.addEventListener('mouseenter',function(){paused=true;});
-      ticker.addEventListener('mouseleave',function(){paused=false;});
-      ticker.addEventListener('touchstart',function(){paused=true;},{passive:true});
-      ticker.addEventListener('touchend',function(){paused=false;});
+  try{var ticker=document.getElementById('ponuda-ticker');
+    if(ticker){var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;var paused=false,started=false,period=0;
+      ticker.addEventListener('mouseenter',function(){paused=true;});ticker.addEventListener('mouseleave',function(){paused=false;});
+      ticker.addEventListener('touchstart',function(){paused=true;},{passive:true});ticker.addEventListener('touchend',function(){paused=false;});
       var tick=function(){if(!paused&&period>0){ticker.scrollLeft+=0.5;if(ticker.scrollLeft>=period)ticker.scrollLeft-=period;}window.requestAnimationFrame(tick);};
       var begin=function(){if(started||reduce)return;started=true;var a=ticker.children[0],b=ticker.children[5];period=(a&&b)?(b.offsetLeft-a.offsetLeft):Math.round(ticker.scrollWidth/2);window.requestAnimationFrame(tick);};
-      if('IntersectionObserver' in window){var tio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)begin();});},{threshold:0.2});tio.observe(ticker);}else{begin();}
-    }
+      if('IntersectionObserver' in window){var tio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)begin();});},{threshold:0.2});tio.observe(ticker);}else{begin();}}
   }catch(e2){}
 })();
 </script>
