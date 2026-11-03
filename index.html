@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="sr-Latn">
 <head>
-<script>try{if(window.matchMedia&&window.matchMedia("(max-width:760px)").matches)location.replace("mobile.html"+location.hash);}catch(e){}</script>
 <meta charset="utf-8">
 <title>Mel-A Mes — Mesara u Staparu | Domaći proizvodi i sveže meso</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -247,12 +246,12 @@ a{color:#681F25}a:hover{color:#4C161B}
 <p class="eyebrow" style="color: #F0C9A6; margin-bottom: 24px">MEL-A MES STAPAR</p>
 <h1 class="display hero2-h" style="margin: 0; color: #FAF8F4">Domaći ukus.<br><span style="color: #F0C9A6">Naša priča.</span></h1>
 <p style="margin: 32px 0 38px; max-width: 440px; font-size: 19px; color: #ECD8CB">U Staparu pravimo mesne prerađevine po proverenim recepturama i nudimo sveže meso za vašu trpezu. Mala mesara, domaći proizvodi i kvalitet do kojeg nam je stalo.</p>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px">
+</div>
+<img class="hero2-img" src="images/hero.png" alt="Mel-A Mes, mesara u Staparu: tradicionalne ilustracije mesa i etikete brenda">
+<div class="hero2-cta" style="display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px">
 <a class="btn btn-cream" href="#proizvodi">Pogledajte proizvode</a>
 <a class="btn btn-outline-cream" href="#prica">Naša priča</a>
 </div>
-</div>
-<img class="hero2-img" src="images/hero.png" alt="Mel-A Mes, mesara u Staparu: tradicionalne ilustracije mesa i etikete brenda">
 </div>
 <div class="hero2-strip">
 
@@ -502,10 +501,25 @@ header.menu-open .burger .ic-close{display:block}
 header.menu-open .burger .ic-open{display:none}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
+<style>
+.hero2-grid{display:grid;grid-template-columns:minmax(0,0.82fr) minmax(0,1.3fr);grid-template-areas:"text img" "cta img";gap:0 40px;align-items:center;min-height:640px;padding:56px 0 52px}
+.hero2-text{grid-area:text}
+.hero2-cta{grid-area:cta;margin-top:30px}
+.hero2-img{grid-area:img;width:100%;max-width:880px;height:auto;object-fit:contain;justify-self:end;align-self:center;margin:0}
+@media (max-width:760px){
+.hero2-grid{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:auto;padding:36px 0 44px}
+.hero2-text{order:1}
+.hero2-img{order:2;width:100%;max-width:100%;margin:12px 0 30px;justify-self:center}
+.hero2-cta{order:3;display:flex;flex-direction:column;gap:14px;margin:0}
+.hero2-cta .btn{width:100%}
+.prod-ph{max-width:400px;margin:0 auto}
+.intro-grid>img{order:2}
+.ticker .slide{flex:0 0 230px}
+}
+</style>
 <script>
 (function(){
-  var header=document.querySelector('header');
-  var burger=document.getElementById('burger');
+  var header=document.querySelector('header');var burger=document.getElementById('burger');
   if(burger&&header){burger.addEventListener('click',function(){var open=header.classList.toggle('menu-open');burger.setAttribute('aria-expanded',open?'true':'false');burger.setAttribute('aria-label',open?'Zatvori meni':'Otvori meni');});}
   window.closeMenu=function(){ if(header)header.classList.remove('menu-open'); if(burger){burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Otvori meni');} };
   var sel='.intro-grid,.prod-head>*,.prod-grid,.story-grid>*,.rev-grid,.faq-list,.visit-grid>*';
